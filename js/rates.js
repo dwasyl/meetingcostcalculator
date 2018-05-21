@@ -3,6 +3,10 @@
 var app = app || {};
 
 app.organizations = {
+  'gnwt': {
+    name: 'GNWT Public Service',
+    hideDropdownLabels: 0
+  },
   'core': {
     name: 'Core Public Service',
     hideDropdownLabels: 0
@@ -1119,6 +1123,511 @@ app.rates.neb = [
         "median": "188490.20",
         "max": "209480.20"
     }
+]
+
+;
+
+// GNWT Salary rates
+// (not including northern living)
+// From: http://www.hr.gov.nt.ca/resources/position-salary-information/salary-ranges, 2017-06-19
+app.rates.gnwt = [
+ {
+   "label": "UNW01",
+   "description": "",
+   "min": "46878.00",
+   "max": "55965.00",
+   "median": "51421.50"
+ },
+ {
+   "label": "UNW02",
+   "description": "",
+   "min": "48633.00",
+   "max": "58071.00",
+   "median": "53352.00"
+ },
+ {
+   "label": "UNW03",
+   "description": "",
+   "min": "50622.00",
+   "max": "60450.00",
+   "median": "55536.00"
+ },
+ {
+   "label": "UNW04",
+   "description": "",
+   "min": "52514.00",
+   "max": "62673.00",
+   "median": "57593.50"
+ },
+ {
+   "label": "UNW05",
+   "description": "",
+   "min": "54561.00",
+   "max": "65111.00",
+   "median": "59836.00"
+ },
+ {
+   "label": "UNW06",
+   "description": "",
+   "min": "56492.00",
+   "max": "67412.00",
+   "median": "61952.00"
+ },
+ {
+   "label": "UNW07",
+   "description": "",
+   "min": "58559.00",
+   "max": "69908.00",
+   "median": "64233.50"
+ },
+ {
+   "label": "UNW08",
+   "description": "",
+   "min": "60762.00",
+   "max": "72540.00",
+   "median": "66651.00"
+ },
+ {
+   "label": "UNW09",
+   "description": "",
+   "min": "62946.00",
+   "max": "75153.00",
+   "median": "69049.50"
+ },
+ {
+   "label": "UNW10",
+   "description": "",
+   "min": "65208.00",
+   "max": "77864.00",
+   "median": "71536.00"
+ },
+ {
+   "label": "UNW11",
+   "description": "",
+   "min": "67607.00",
+   "max": "80691.00",
+   "median": "74149.00"
+ },
+ {
+   "label": "UNW12",
+   "description": "",
+   "min": "72677.00",
+   "max": "86775.00",
+   "median": "79726.00"
+ },
+ {
+   "label": "UNW13",
+   "description": "",
+   "min": "76011.00",
+   "max": "90753.00",
+   "median": "83382.00"
+ },
+ {
+   "label": "UNW14",
+   "description": "",
+   "min": "79658.00",
+   "max": "95102.00",
+   "median": "87380.00"
+ },
+ {
+   "label": "UNW15",
+   "description": "",
+   "min": "83363.00",
+   "max": "99509.00",
+   "median": "91436.00"
+ },
+ {
+   "label": "UNW16",
+   "description": "",
+   "min": "87263.00",
+   "max": "104208.00",
+   "median": "95735.50"
+ },
+ {
+   "label": "UNW17",
+   "description": "",
+   "min": "91358.00",
+   "max": "109064.00",
+   "median": "100211.00"
+ },
+ {
+   "label": "UNW18",
+   "description": "",
+   "min": "95589.00",
+   "max": "114134.00",
+   "median": "104861.50"
+ },
+ {
+   "label": "UNW19",
+   "description": "",
+   "min": "100016.00",
+   "max": "119418.00",
+   "median": "109717.00"
+ },
+ {
+   "label": "UNW20",
+   "description": "",
+   "min": "104618.00",
+   "max": "124898.00",
+   "median": "114758.00"
+ },
+ {
+   "label": "UNW21",
+   "description": "",
+   "min": "109493.00",
+   "max": "130709.00",
+   "median": "120101.00"
+ },
+ {
+   "label": "UNW22",
+   "description": "",
+   "min": "114524.00",
+   "max": "136715.00",
+   "median": "125619.50"
+ },
+ {
+   "label": "UNW23",
+   "description": "",
+   "min": "119789.00",
+   "max": "143013.00",
+   "median": "131401.00"
+ },
+ {
+   "label": "UNW24",
+   "description": "",
+   "min": "125229.00",
+   "max": "149526.00",
+   "median": "137377.50"
+ },
+ {
+   "label": "UNW25",
+   "description": "",
+   "min": "131001.00",
+   "max": "156410.00",
+   "median": "143705.50"
+ },
+ {
+   "label": "EXC01",
+   "description": "",
+   "min": "46878.00",
+   "max": "55965.00",
+   "median": "51421.50"
+ },
+ {
+   "label": "EXC02",
+   "description": "",
+   "min": "48633.00",
+   "max": "58071.00",
+   "median": "53352.00"
+ },
+ {
+   "label": "EXC03",
+   "description": "",
+   "min": "50622.00",
+   "max": "60450.00",
+   "median": "55536.00"
+ },
+ {
+   "label": "EXC04",
+   "description": "",
+   "min": "52514.00",
+   "max": "62673.00",
+   "median": "57593.50"
+ },
+ {
+   "label": "EXC05",
+   "description": "",
+   "min": "54561.00",
+   "max": "65111.00",
+   "median": "59836.00"
+ },
+ {
+   "label": "EXC06",
+   "description": "",
+   "min": "56492.00",
+   "max": "67412.00",
+   "median": "61952.00"
+ },
+ {
+   "label": "EXC07",
+   "description": "",
+   "min": "58559.00",
+   "max": "69908.00",
+   "median": "64233.50"
+ },
+ {
+   "label": "EXC08",
+   "description": "",
+   "min": "60762.00",
+   "max": "72540.00",
+   "median": "66651.00"
+ },
+ {
+   "label": "EXC09",
+   "description": "",
+   "min": "62946.00",
+   "max": "75153.00",
+   "median": "69049.50"
+ },
+ {
+   "label": "EXC10",
+   "description": "",
+   "min": "65208.00",
+   "max": "77864.00",
+   "median": "71536.00"
+ },
+ {
+   "label": "EXC11",
+   "description": "",
+   "min": "67607.00",
+   "max": "80691.00",
+   "median": "74149.00"
+ },
+ {
+   "label": "EXC12",
+   "description": "",
+   "min": "72677.00",
+   "max": "86775.00",
+   "median": "79726.00"
+ },
+ {
+   "label": "EXC13",
+   "description": "",
+   "min": "76011.00",
+   "max": "90753.00",
+   "median": "83382.00"
+ },
+ {
+   "label": "EXC14",
+   "description": "",
+   "min": "79658.00",
+   "max": "95102.00",
+   "median": "87380.00"
+ },
+ {
+   "label": "EXC15",
+   "description": "",
+   "min": "83363.00",
+   "max": "99509.00",
+   "median": "91436.00"
+ },
+ {
+   "label": "EXC16",
+   "description": "",
+   "min": "87263.00",
+   "max": "104208.00",
+   "median": "95735.50"
+ },
+ {
+   "label": "EXC17",
+   "description": "",
+   "min": "91358.00",
+   "max": "109064.00",
+   "median": "100211.00"
+ },
+ {
+   "label": "EXC18",
+   "description": "",
+   "min": "95589.00",
+   "max": "114134.00",
+   "median": "104861.50"
+ },
+ {
+   "label": "EXC19",
+   "description": "",
+   "min": "100016.00",
+   "max": "119418.00",
+   "median": "109717.00"
+ },
+ {
+   "label": "EXC20",
+   "description": "",
+   "min": "104618.00",
+   "max": "124898.00",
+   "median": "114758.00"
+ },
+ {
+   "label": "EXC21",
+   "description": "",
+   "min": "109493.00",
+   "max": "130709.00",
+   "median": "120101.00"
+ },
+ {
+   "label": "EXC22",
+   "description": "",
+   "min": "114524.00",
+   "max": "136715.00",
+   "median": "125619.50"
+ },
+ {
+   "label": "EXC23",
+   "description": "",
+   "min": "119789.00",
+   "max": "143013.00",
+   "median": "131401.00"
+ },
+ {
+   "label": "EXC24",
+   "description": "",
+   "min": "125229.00",
+   "max": "149526.00",
+   "median": "137377.50"
+ },
+ {
+   "label": "EXC25",
+   "description": "",
+   "min": "131001.00",
+   "max": "156410.00",
+   "median": "143705.50"
+ },
+ {
+   "label": "SRM01",
+   "description": "",
+   "min": "91046.00",
+   "max": "130065.00",
+   "median": "110555.50"
+ },
+ {
+   "label": "SRM02",
+   "description": "",
+   "min": "94595.00",
+   "max": "135135.00",
+   "median": "114865.00"
+ },
+ {
+   "label": "SRM03",
+   "description": "",
+   "min": "96954.00",
+   "max": "138509.00",
+   "median": "117731.50"
+ },
+ {
+   "label": "SRM04",
+   "description": "",
+   "min": "100718.00",
+   "max": "143871.00",
+   "median": "122294.50"
+ },
+ {
+   "label": "SRM05",
+   "description": "",
+   "min": "105690.00",
+   "max": "150989.00",
+   "median": "128339.50"
+ },
+ {
+   "label": "SRM06",
+   "description": "",
+   "min": "109493.00",
+   "max": "156410.00",
+   "median": "132951.50"
+ },
+ {
+   "label": "SRM07",
+   "description": "",
+   "min": "113412.00",
+   "max": "162006.00",
+   "median": "137709.00"
+ },
+ {
+   "label": "SRM08",
+   "description": "",
+   "min": "117546.00",
+   "max": "167915.00",
+   "median": "142730.50"
+ },
+ {
+   "label": "SRM09",
+   "description": "",
+   "min": "121797.00",
+   "max": "173999.00",
+   "median": "147898.00"
+ },
+ {
+   "label": "SRM10",
+   "description": "",
+   "min": "126185.00",
+   "max": "180258.00",
+   "median": "153221.50"
+ },
+ {
+   "label": "SRM11",
+   "description": "",
+   "min": "130709.00",
+   "max": "186732.00",
+   "median": "158720.50"
+ },
+ {
+   "label": "SRM12",
+   "description": "",
+   "min": "135369.00",
+   "max": "193382.00",
+   "median": "164375.50"
+ },
+ {
+   "label": "SRM13",
+   "description": "",
+   "min": "140147.00",
+   "max": "200070.00",
+   "median": "170108.50"
+ },
+ {
+   "label": "SRM14",
+   "description": "",
+   "min": "145080.00",
+   "max": "207246.00",
+   "median": "176163.00"
+ },
+ {
+   "label": "SRM15",
+   "description": "",
+   "min": "150228.00",
+   "max": "214598.00",
+   "median": "182413.00"
+ },
+ {
+   "label": "SRM16",
+   "description": "",
+   "min": "155552.00",
+   "max": "222222.00",
+   "median": "188887.00"
+ },
+ {
+   "label": "SRM17",
+   "description": "",
+   "min": "161246.00",
+   "max": "230354.00",
+   "median": "195800.00"
+ },
+ {
+   "label": "SRM18",
+   "description": "",
+   "min": "167291.00",
+   "max": "238992.00",
+   "median": "203141.50"
+ },
+ {
+   "label": "SRM19",
+   "description": "",
+   "min": "173570.00",
+   "max": "247943.00",
+   "median": "210756.50"
+ },
+ {
+   "label": "SRM20",
+   "description": "",
+   "min": "180083.00",
+   "max": "257264.00",
+   "median": "218673.50"
+ },
+ {
+   "label": "SRM21",
+   "description": "",
+   "min": "184665.00",
+   "max": "263816.00",
+   "median": "224240.50"
+ }
 ]
 
 ;

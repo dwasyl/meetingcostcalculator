@@ -98,7 +98,7 @@ $(function() {
 
 		app.meetingCost.ratesSelectTemplate = _.template($('#ratesSelectTemplate').html());
 
-		app.meetingCost.changeOrganization('core');
+		app.meetingCost.changeOrganization('gnwt');
 		app.selectedRate = 'median';
 
 		// Initializes other re-resettable values
